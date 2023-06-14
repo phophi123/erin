@@ -1,0 +1,280 @@
+.gallery-layout {
+  text-align: center;
+  height: 100vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(107, 124, 138);
+}
+
+.header {
+  text-align: center;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 25px;
+  margin-top: 180%;
+}
+
+.gall {
+  flex: 0 0 calc(33.33% - 20px);
+  margin: 10px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.gall:hover {
+  transform: scale(1.1);
+}
+
+.gall img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top; /* Adjust the object position to center top */
+}
+
+.gall::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gall:hover::before {
+  opacity: 1;
+}
+
+.gall {
+  width: 300px;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+
+.gall1 {
+  margin-left: -190%;
+  margin-top: -60%;
+  overflow: hidden;
+  position: relative;
+}
+
+.HEAD {
+  text-align: center;
+  margin-top: 5%;
+  margin-left: -15%;
+  font-weight: 100;
+  font-size: 70px;
+  color: rgba(255, 255, 255, 0.856);
+  width: 10px;
+}
+
+.HEAD2 {
+  color: rgba(255, 255, 255, 0.856);
+  font-size: 30px;
+  margin-left: 30%;
+}
+
+.gall img {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.horizontal-nav:hover {
+  background-color: rgba(133, 202, 241, 0.438);
+  height: 6%;
+}
+
+.horizontal-nav {
+  padding: 10px;
+  background-color: transparent;
+  transition: background-color 0.1s ease-in-out;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999; /* Ensure the nav bar is on top of other elements */
+}
+
+.horizontal-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.horizontal-nav li {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+.horizontal-nav a {
+  color: #050505;
+  text-decoration: none;
+  padding: 6px;
+  font-weight: 10px;
+  font-size: 30px;
+  position: relative;
+}
+
+.horizontal-nav a::after {
+  content: " ";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #f7b70a;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.horizontal-nav a:hover::after {
+  transform: scaleX(1);
+}
+
+.blue-box {
+  background-color: rgb(41, 118, 235);
+  width: 2300px;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color: white;
+}
+
+.social-media-icons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  left: 10px;
+}
+
+.social-media-icons a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: rgb(231, 140, 22);
+  border-radius: 50%;
+  margin: 7px;
+  text-align: center;
+  line-height: 40px;
+  left: 10px;
+}
+
+.social-media-icons a:hover {
+  background-color: gold;
+}
+
+.signup-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: gold;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-size: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 15%;
+  margin-top: -4%;
+}
+
+.signup-button:hover {
+  background-color: gold;
+}
+.transparent-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.transparent-button1 {
+  display: inline-block;
+  padding: 10px 50px;
+  width: 300px; /* Add this line to set a fixed width */
+  background-color: transparent;
+  border: 2px solid gold;
+  color: gold;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: -30px;
+  margin-left: 60%;
+}
+
+.transparent-button2 {
+  display: inline-block;
+  padding: 10px 50px;
+  width: 300px; /* Add this line to set a fixed width */
+  background-color: transparent;
+  border: 2px solid gold;
+  color: gold;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 30px;
+  margin-left: 60%;
+}
+
+.transparent-button:hover {
+  background-color: rgba(206, 206, 116, 0.829);
+  color: black;
+}
+
+.upload {
+  margin-top: 10%;
+  margin-left: -14%;
+  background-color: gold;
+  color: black;
+}
+
+.view {
+  background-color: gold;
+  margin-top: 10%;
+    color: black;
+}
+
+.button-container {
+  background-color: rgb(69, 109, 218);
+  width: 730px;
+  height: 200px;
+}
+
+.imgH {
+  color: aliceblue;
+  margin-right: 160px;
+}
+
+.imgH2 {
+  color: aliceblue;
+  font-size: 37px;
+  font-weight: 12%;
+}
